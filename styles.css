@@ -1,0 +1,17 @@
+/* Minimalist/Simple: Focusses on the essential text content, using small or
+medium-sized sans-serif black text, lines, and few images and icons. */
+/* typescale: 
+0.694rem 
+0.833rem 
+1rem - p
+1.2rem - h6
+1.44rem 
+1.728rem 
+2.074rem 
+2.488rem
+2.986rem; */
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
