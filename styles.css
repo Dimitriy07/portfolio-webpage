@@ -130,6 +130,10 @@ body {
   transform: translateX(-2px);
 }
 
+/*****************************/
+/******FLIPPED SUMMARY *********/
+/*****************************/
+
 .flipped-card__summary {
   position: relative;
   background-color: transparent;
@@ -146,7 +150,7 @@ body {
   transform-style: preserve-3d;
 }
 
-.flipped-card__summary:hover .flipped-card__inner {
+.flipped-card__inner-turn {
   transform: rotateY(180deg);
 }
 
@@ -161,14 +165,77 @@ body {
 
 .flipped-card__front {
   padding: 0.5rem;
-  border: 1px solid black;
   background-image: url("Images/paperboard-texture.jpg");
 }
 .flipped-card__back {
   padding: 0.5rem;
-  border: 1px solid black;
   background-image: url("Images/paperboard-texture.jpg");
   transform: rotateY(180deg);
+}
+
+/*****************************/
+/******DOG EARED BUTTON *********/
+/*****************************/
+.right-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* Folded corner effect */
+.right-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  border-color: transparent #ccd4dd transparent transparent;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.left-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.dog-eared-button {
+  padding: 1rem 1rem;
+  background-image: url("Images/paperboard-texture.jpg");
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.dog-eared-button:hover {
+  opacity: 1;
+}
+
+.dog-eared-button:hover::before {
+  transform: translate(5px);
+}
+
+.left-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 0 20px;
+  border-color: transparent transparent transparent #ccd4dd;
+  box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.left-button:hover::before {
+  transform: translate(-5px);
 }
 /***********/
 /* right part of the card */
