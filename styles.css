@@ -239,9 +239,9 @@ body {
 
 .arrow {
   position: absolute;
-  bottom: -2.8rem;
-  right: -3.9rem;
-  transform: scale(0.4) rotate(0.04turn);
+  bottom: -2.2rem;
+  right: -1.2rem;
+  transform: scale(0.3) rotate(20deg);
 }
 
 /***********/
