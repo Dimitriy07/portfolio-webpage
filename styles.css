@@ -22,7 +22,12 @@ body {
   line-height: 1.5;
   font-size: 62.5%;
 }
-
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  font-size: 110%;
+}
 .background {
   padding: 6rem;
   background-color: #ccd4dd;
@@ -35,7 +40,7 @@ body {
 
 .card {
   position: relative;
-  background-image: url("Images/paperboard-texture.jpg");
+  background-image: url("images/paperboard-texture.jpg");
   min-width: 90rem;
   min-height: 73rem;
   max-height: 73rem;
@@ -47,6 +52,9 @@ body {
   padding: 0 3rem;
   color: #1a3f65;
   margin: 0 auto;
+  --webkit-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  --moz-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
 }
 
 .post-message-left {
@@ -74,7 +82,7 @@ body {
   left: 0;
   width: 100%;
   height: 1rem;
-  background-image: url("Images/air-frame-x.png");
+  background-image: url("images/air-frame-x.png");
   background-size: cover;
 }
 .card::after {
@@ -84,7 +92,7 @@ body {
   left: 0;
   width: 100%;
   height: 1rem;
-  background-image: url("Images/air-frame-x.png");
+  background-image: url("images/air-frame-x.png");
   background-size: cover;
 }
 
@@ -94,7 +102,7 @@ body {
   left: 0;
   width: 1rem;
   height: 100%;
-  background-image: url("Images/air-frame-y.png");
+  background-image: url("images/air-frame-y.png");
   background-size: cover;
 }
 
@@ -104,7 +112,7 @@ body {
   right: 0;
   width: 1rem;
   height: 100%;
-  background-image: url("Images/air-frame-y.png");
+  background-image: url("images/air-frame-y.png");
   background-size: cover;
 }
 
@@ -120,9 +128,13 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
+.summary-container a {
+  text-decoration: none;
+  color: #1a3f65;
+}
 .summary-gap__container {
   position: relative;
   padding: 0.5rem;
@@ -178,12 +190,36 @@ body {
 
 .flipped-card__front {
   padding: 0.5rem;
-  background-image: url("Images/paperboard-texture.jpg");
+  background-image: url("images/paperboard-texture.jpg");
+  --webkit-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  --moz-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
 }
 .flipped-card__back {
   padding: 0.5rem;
-  background-image: url("Images/paperboard-texture.jpg");
+  background-image: url("images/paperboard-texture.jpg");
   transform: rotateY(180deg);
+  --webkit-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  --moz-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+}
+
+/*************************/
+/*******Articles style **********/
+/*************************/
+
+.about-me {
+  padding-left: 0.5rem;
+}
+
+.education {
+  padding-left: 0.5rem;
+}
+.education li {
+  list-style: none;
+}
+.education li > ul > li {
+  list-style: circle;
 }
 
 /*****************************/
@@ -204,7 +240,7 @@ body {
   height: 0;
   border-style: solid;
   border-width: 20px 20px 0 0;
-  border-color: transparent #ccd4dd transparent transparent;
+  border-color: transparent #bfc3cc transparent transparent;
   box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
@@ -217,7 +253,7 @@ body {
 
 .dog-eared-button {
   padding: 1rem 1rem;
-  background-image: url("Images/paperboard-texture.jpg");
+  background-image: url("images/paperboard-texture.jpg");
   border: none;
   cursor: pointer;
   overflow: hidden;
@@ -242,7 +278,7 @@ body {
   height: 0;
   border-style: solid;
   border-width: 20px 0 0 20px;
-  border-color: transparent transparent transparent #ccd4dd;
+  border-color: transparent transparent transparent #bfc3cc;
   box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
@@ -259,7 +295,7 @@ body {
 
 /***********/
 /* right part of the card */
-
+/*********/
 .info_card {
   flex: 1;
   height: 90%;
@@ -299,6 +335,24 @@ body {
   height: 100%;
   width: 100%;
   transform: rotate(0.02turn);
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-container p {
+  margin: 0;
+}
+
+.contact img {
+  height: 3rem;
+  transition: 0.5s;
+}
+.contact img:hover {
+  transform: scale(1.5);
 }
 
 .skills {
@@ -372,9 +426,10 @@ body {
   margin-top: -15rem;
 }
 .item12 {
-  margin-top: -3rem;
+  margin-top: -4rem;
+  margin-left: -23rem;
 }
 .item13 {
-  margin-top: -2rem;
-  margin-left: 12rem;
+  margin-top: -11rem;
+  margin-left: 20rem;
 }

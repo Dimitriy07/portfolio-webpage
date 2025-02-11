@@ -9,7 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Dimitriy's Personal Website</title>
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
   </head>
 
   <body>
@@ -27,7 +28,7 @@
                 <div class="flipped-card__front">
                   <article>
                     <h3>About Me</h3>
-                    <section>
+                    <section class="about-me">
                       I'm a passionate self-taught Web Developer with expertise
                       in React and knowledge in backend technologies like
                       Node.js. I transitioned into the tech industry after 14
@@ -39,14 +40,22 @@
                   <article>
                     <h3>Education</h3>
                     <section>
-                      <ul>
+                      <ul class="education">
                         <li>
                           College/University
                           <ul>
-                            <li>2003-2005 Maritime Technical College</li>
                             <li>
-                              2005-2011 Ushakov Maritime Academy - Master Degree
-                              in Navigation Engineering
+                              <a href="https://mtl-nvr.ru/" target="_blank">
+                                <i>2003-2005</i> -
+                                <strong>Maritime Technical College</strong>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://pk.aumsu.ru/" target="_blank">
+                                <i> 2005-2011</i> -
+                                <strong> Ushakov Maritime Academy</strong> -
+                                Master Degree in Navigation Engineering
+                              </a>
                             </li>
                           </ul>
                         </li>
@@ -54,34 +63,85 @@
                           Courses
                           <ul>
                             <li>
-                              CS50: Introduction to Computer Science [Harvard
-                              University]
+                              <a
+                                href="https://pll.harvard.edu/course/cs50-introduction-computer-science"
+                                target="_blank"
+                              >
+                                <strong
+                                  >CS50: Introduction to Computer
+                                  Science</strong
+                                >
+                                - [Harvard University]
+                              </a>
                             </li>
                             <li>
-                              The Complete JavaScript Course 2025: From Zero to
-                              Expert![Udemy] - Jonas Schmedtmann
+                              <a
+                                href="https://www.udemy.com/course/the-complete-javascript-course/?couponCode=KEEPLEARNINGGB"
+                                target="_blank"
+                              >
+                                <strong
+                                  >The Complete JavaScript Course 2025: From
+                                  Zero to Expert!</strong
+                                >
+                                - [Udemy] Jonas Schmedtmann
+                              </a>
                             </li>
                             <li>
-                              The Ultimate React Course 2024: React, Next.js,
-                              Redux [Udemy] - Jonas Schmedtmann
+                              <a
+                                href="https://www.udemy.com/course/the-ultimate-react-course/"
+                                target="_blank"
+                              >
+                                <strong>
+                                  The Ultimate React Course 2024: React,
+                                  Next.js, Redux</strong
+                                >
+                                - [Udemy] Jonas Schmedtmann
+                              </a>
                             </li>
                             <li>
-                              NodeJS - The Complete Guide (MVC, REST APIs,
-                              GraphQL, Deno) [Udemy] - Academind by Maximilian
-                              Schwarzmüller
+                              <a
+                                href="https://www.udemy.com/course/nodejs-the-complete-guide/"
+                                target="_blank"
+                              >
+                                <strong>
+                                  NodeJS - The Complete Guide (MVC, REST APIs,
+                                  GraphQL, Deno)</strong
+                                >
+                                - [Udemy] Academind by Maximilian Schwarzmüller
+                              </a>
                             </li>
                             <li>
-                              Mastering TypeScript - 2025 Edition [Udemy] - Colt
-                              Steele
+                              <a
+                                href="https://www.udemy.com/course/learn-typescript/?couponCode=KEEPLEARNINGGB"
+                                target="_blank"
+                              >
+                                <strong
+                                  >Mastering TypeScript - 2025 Edition
+                                </strong>
+                                - [Udemy] Colt Steele
+                              </a>
                             </li>
                             <li>
-                              The Complete Full-Stack Web Development Bootcamp
-                              [Udemy] - Dr. Angela Yu
+                              <a
+                                href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=KEEPLEARNINGGB"
+                                target="_blank"
+                              >
+                                <strong
+                                  >The Complete Full-Stack Web Development
+                                  Bootcamp</strong
+                                >
+                                - [Udemy] Dr. Angela Yu
+                              </a>
                             </li>
                             <li>
-                              The Git & Github Bootcamp [Udemy] - Colt Steele
+                              <a
+                                href="https://www.udemy.com/course/git-and-github-bootcamp/?couponCode=KEEPLEARNINGGB"
+                                target="_blank"
+                              >
+                                <strong>The Git & Github Bootcamp</strong> -
+                                [Udemy] Colt Steele
+                              </a>
                             </li>
-                            <li>C++ For C Programmers [Coursera]</li>
                           </ul>
                         </li>
                       </ul>
@@ -97,46 +157,56 @@
                 </div>
                 <div class="flipped-card__back">
                   <article>
-                    <h4>Work Experience</h4>
+                    <h3>Work Experience</h3>
                     <section>
                       <dl>
-                        <dt>Logistic Manager</dt>
+                        <dt class="flex">
+                          <span> <strong> Logistics Manager </strong> </span>
+                          <span> Monolith UK(Ltd) 2018-present </span>
+                        </dt>
                         <dd>
-                          Configured Microsoft Dynamics from scratch and
-                          participated in the implementation and connection of
-                          route optimization software with the company's ERP
-                          system.
+                          <strong>ERP & Software Integration:</strong> Led the
+                          implementation of Route Optimization software with the
+                          company’s ERP system and configured Microsoft Dynamics
+                          365 for warehouse operations.
                         </dd>
                         <dd>
-                          Managed logistics operations, optimizing supply chain
-                          processes and ensuring on-time deliveries.
+                          <strong>Data & Process Automation:</strong> Created
+                          Power BI/Excel reports and optimized workflows using
+                          Microsoft Apps and Power Automate.
                         </dd>
                         <dd>
-                          Led cross-functional teams, improving communication
-                          and project coordination.
+                          <strong>Operations & Leadership:</strong> Managed
+                          logistics processes, optimized supply chains, and led
+                          cross-functional teams to improve efficiency.
                         </dd>
-                        <dt>Navigation Officer</dt>
+
+                        <dt class="flex">
+                          <span><strong>Navigation Officer </strong> </span>
+                          <span>V.Ship Gmbh 2011-2017</span>
+                        </dt>
                         <dd>
-                          Maintained all navigation and electronic equipment,
-                          ensuring optimal functionality and reliability.
-                        </dd>
-                        <dd>
-                          Configured and administrated all digital aspects of
-                          navigation systems.
-                        </dd>
-                        <dd>
-                          Applied critical problem-solving skills in
-                          high-pressure environments.
+                          <strong>Systems & Network Administration:</strong>
+                          Operated, configured, and maintained ECDIS and other
+                          digital navigation tools.
                         </dd>
                         <dd>
-                          Coordinated with international teams, enhancing
-                          operational efficiency.
+                          <strong>Technical Equipment Management:</strong>
+                          Administered radio, electronic, and ship communication
+                          systems to ensure operational reliability.
+                        </dd>
+                        <dd>
+                          <strong>Problem Solving & Coordination:</strong>
+                          Resolved technical challenges in high-pressure
+                          environments and collaborated with international
+                          teams.
                         </dd>
                       </dl>
                     </section>
                   </article>
+
                   <article>
-                    <h4>Language</h4>
+                    <h3>Language</h3>
                     <section>
                       <ul>
                         <li>English</li>
@@ -153,7 +223,6 @@
         </article>
 
         <article class="info_card">
-
           <header class="header">
             <div class="header-container">
               <h1>DIMITRIY BABICH</h1>
@@ -171,17 +240,44 @@
                 />
               </div>
             </div>
-  
           </header>
 
           <hr />
           <hr />
-          <address>
-           <p>
-            BACK ADDRESS:
-           </p>
-           <div></div>
-          </address>
+          <div class="contact-container">
+            <p>BACK ADDRESS:</p>
+            <address class="contact">
+              <a href="mailto:babich.dimitriy@gmail.com" target="_blank"
+                ><img
+                  src="/images/contact-stamps/email-stamp.png"
+                  alt="email contact stamp"
+              /></a>
+              <a href="https://wa.me/447555111830" target="_blank"
+                ><img
+                  src="/images/contact-stamps/whatsapp-stamp.png"
+                  alt="whatsapp contact stamp"
+              /></a>
+              <a
+                href="www.linkedin.com/in/dimitriy-babich-53552296"
+                target="_blank"
+                ><img
+                  src="/images/contact-stamps/linkedin-stamp.png"
+                  alt="linkedin contact stamp"
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100000729048649"
+                target="_blank"
+                ><img
+                  src="/images/contact-stamps/facebook-stamp.png"
+                  alt="facebook contact stamp"
+              /></a>
+              <a href="https://github.com/Dimitriy07" target="_blank"
+                ><img
+                  src="/images/contact-stamps/github-stamp.png"
+                  alt="github contact stamp"
+              /></a>
+            </address>
+          </div>
           <div class="skills">
             <h2>Tech Stack</h2>
             <div class="tech-stack">
@@ -282,27 +378,26 @@
                   </a>
                 </div>
                 <div class="item11">
-                  <a
-                    href="https://graphql.org/" target="_blank">
+                  <a href="https://graphql.org/" target="_blank">
                     <img
-                    src="/images/skill-stamps/graphql-stamp.png"
-                    alt="GraphQL stamp"
+                      src="/images/skill-stamps/graphql-stamp.png"
+                      alt="GraphQL stamp"
                     />
-                  </div>
-                </a>
+                  </a>
+                </div>
                 <div class="item12">
                   <a href="https://code.visualstudio.com/" target="_blank">
                     <img
-                    src="/images/skill-stamps/vscode-stamp.png"
-                    alt="VSCode stamp"
+                      src="/images/skill-stamps/vscode-stamp.png"
+                      alt="VSCode stamp"
                     />
                   </a>
                 </div>
                 <div class="item13">
                   <a href="https://github.com/Dimitriy07" target="_blank">
                     <img
-                    src="/images/skill-stamps/github-stamp.png"
-                    alt="Github stamp"
+                      src="/images/skill-stamps/github-stamp.png"
+                      alt="Github stamp"
                     />
                   </a>
                 </div>
@@ -316,46 +411,3 @@
     <script src="index.js"></script>
   </body>
 </html>
-
-<!-- <ul class="tech-stack__list">
-  <h4>Front End</h4>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>EJS</li>
-  <li>JavaScript</li>
-  <li>
-    React
-    <ul>
-      <li>React Router</li>
-      <li>TankStack Query</li>
-      <li>Redux</li>
-      <li>Tailwind CSS</li>
-      <li>Styled Components</li>
-    </ul>
-  </li>
-</ul>
-<ul class="tech-stack__list">
-  <h4>Back End</h4>
-  <li>Next JS</li>
-  <li>
-    Node JS
-    <ul>
-      <li>Express JS</li>
-    </ul>
-  </li>
-  <li>
-    Database
-    <ul>
-      <li>MongoDB/Mongoose</li>
-      <li>SQL/NoSQL</li>
-    </ul>
-  </li>
-
-  <li>
-    API
-    <ul>
-      <li>RestAPI</li>
-      <li>GraphQL</li>
-    </ul>
-  </li>
-</ul> -->
