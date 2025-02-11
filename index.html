@@ -2,20 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+      onload="this.media='all'; this.onload=null;"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Personal Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dimitriy Babich",
+        "jobTitle": "Web Developer",
+        "url": "",
+        "sameAs": [
+          "www.linkedin.com/in/dimitriy-babich-53552296",
+          "https://github.com/Dimitriy07"
+        ]
+      }
+    </script>
   </head>
 
   <body>
     <div class="background">
-      <main class="card">
+      <main class="card" role="main">
         <div class="air-frame-left"></div>
         <div class="air-frame-right"></div>
         <p class="post-message-left">PLACE FOR CORRESPONDANCE</p>
@@ -237,6 +258,7 @@
                 <img
                   src="/images/postage-photo.png"
                   alt="Postage photo avatar"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -247,18 +269,25 @@
           <div class="contact-container">
             <p>BACK ADDRESS:</p>
             <address class="contact">
-              <a href="mailto:babich.dimitriy@gmail.com" target="_blank"
+              <a
+                href="mailto:babich.dimitriy@gmail.com"
+                target="_blank"
+                aria-label="Email"
                 ><img
                   src="/images/contact-stamps/email-stamp.png"
                   alt="email contact stamp"
               /></a>
-              <a href="https://wa.me/447555111830" target="_blank"
+              <a
+                href="https://wa.me/447555111830"
+                target="_blank"
+                aria-label="Whatsup number"
                 ><img
                   src="/images/contact-stamps/whatsapp-stamp.png"
                   alt="whatsapp contact stamp"
               /></a>
               <a
                 href="www.linkedin.com/in/dimitriy-babich-53552296"
+                aria-label="LinkedIn profile"
                 target="_blank"
                 ><img
                   src="/images/contact-stamps/linkedin-stamp.png"
@@ -266,12 +295,16 @@
               /></a>
               <a
                 href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100000729048649"
+                aria-label="Facebook profile"
                 target="_blank"
                 ><img
                   src="/images/contact-stamps/facebook-stamp.png"
                   alt="facebook contact stamp"
               /></a>
-              <a href="https://github.com/Dimitriy07" target="_blank"
+              <a
+                href="https://github.com/Dimitriy07"
+                target="_blank"
+                aria-label="Github profile"
                 ><img
                   src="/images/contact-stamps/github-stamp.png"
                   alt="github contact stamp"
@@ -281,7 +314,7 @@
           <div class="skills">
             <h2>Tech Stack</h2>
             <div class="tech-stack">
-              <div class="tech-stamps">
+              <div class="tech-stak__stamps">
                 <div class="item1">
                   <a
                     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"

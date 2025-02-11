@@ -1,15 +1,9 @@
-/* Minimalist/Simple: Focusses on the essential text content, using small or
-medium-sized sans-serif black text, lines, and few images and icons. */
-/* typescale: 
-0.694rem 
-0.833rem 
-1rem - p
-1.2rem - h6
-1.44rem 
-1.728rem 
-2.074rem 
-2.488rem
-2.986rem; */
+:root {
+  --primary-color: #1a3f65;
+  --secondary-color: #ccd4dd;
+  --shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -30,7 +24,7 @@ body {
 }
 .background {
   padding: 6rem;
-  background-color: #ccd4dd;
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,11 +44,11 @@ body {
   align-items: center;
   overflow: hidden;
   padding: 0 3rem;
-  color: #1a3f65;
+  color: var(--primary-color);
   margin: 0 auto;
-  --webkit-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
-  --moz-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
-  box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  --webkit-box-shadow: var(--shadow);
+  --moz-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .post-message-left {
@@ -133,12 +127,12 @@ body {
 
 .summary-container a {
   text-decoration: none;
-  color: #1a3f65;
+  color: var(--primary-color);
 }
 .summary-gap__container {
   position: relative;
   padding: 0.5rem;
-  background-color: #ccd4dd;
+  background-color: var(--secondary-color);
   height: 100%;
   width: 100%;
   /* border: 1px solid black; */
@@ -191,17 +185,17 @@ body {
 .flipped-card__front {
   padding: 0.5rem;
   background-image: url("images/paperboard-texture.jpg");
-  --webkit-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
-  --moz-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
-  box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  --webkit-box-shadow: var(--shadow);
+  --moz-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 .flipped-card__back {
   padding: 0.5rem;
   background-image: url("images/paperboard-texture.jpg");
   transform: rotateY(180deg);
-  --webkit-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
-  --moz-box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
-  box-shadow: -1px 10px 39px -5px rgba(0, 0, 0, 0.3);
+  --webkit-box-shadow: var(--shadow);
+  --moz-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 /*************************/
@@ -335,6 +329,7 @@ body {
   height: 100%;
   width: 100%;
   transform: rotate(0.02turn);
+  
 }
 
 .contact-container {
@@ -374,7 +369,7 @@ body {
 /******TECH STACK SKILL STAMPS*******/
 /*******************************/
 
-.tech-stamps {
+.tech-stak__stamps {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -382,19 +377,19 @@ body {
   transition: transform 2s;
 }
 
-.tech-stamps div {
+.tech-stak__stamps div {
   width: 100%;
+  will-change: transform;
+  transition: transform 0.3s ease-out;
 }
-.tech-stamps img {
-  width: 100%;
-}
-.tech-stamps div {
-  transition: transform 0.5s;
-}
-.tech-stamps div:hover {
+.tech-stak__stamps div:hover {
   transform: scale(1.3);
   cursor: pointer;
 }
+.tech-stak__stamps img {
+  width: 100%;
+}
+
 .item2 {
   margin-left: -3rem;
 }
