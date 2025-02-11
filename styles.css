@@ -36,20 +36,33 @@ body {
 .card {
   position: relative;
   background-image: url("Images/paperboard-texture.jpg");
-  min-height: 65rem;
-  max-height: 74rem;
-  min-width: 80rem;
-  max-width: 90rem;
-  flex-grow: 0.5;
-  width: 80%;
+  min-width: 90rem;
+  min-height: 73rem;
+  max-height: 73rem;
+  aspect-ratio: 90 / 74;
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
   padding: 0 3rem;
   color: #1a3f65;
+  margin: 0 auto;
 }
 
+.post-message-left {
+  position: absolute;
+  top: 1rem;
+  left: 20%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.post-message-right {
+  position: absolute;
+  top: 1rem;
+  right: 30%;
+  font-size: 1rem;
+  font-weight: bold;
+}
 /********************************/
 /*AIRFRAME border*/
 /********************************/
@@ -296,17 +309,23 @@ body {
   margin-bottom: 3rem;
 }
 .skills h2 {
+  margin: 0;
   font-size: 1.7rem;
 }
 .skills h4 {
   font-size: 1rem;
 }
 
+/*******************************/
+/******TECH STACK SKILL STAMPS*******/
+/*******************************/
+
 .tech-stamps {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   overflow: hidden;
+  transition: transform 2s;
 }
 
 .tech-stamps div {
@@ -314,4 +333,48 @@ body {
 }
 .tech-stamps img {
   width: 100%;
+}
+.tech-stamps div {
+  transition: transform 0.5s;
+}
+.tech-stamps div:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.item2 {
+  margin-left: -3rem;
+}
+
+.item4 {
+  margin-top: -3rem;
+}
+.item5 {
+  margin-top: -6rem;
+  margin-left: 5rem;
+}
+.item6 {
+  margin-top: -3rem;
+  margin-left: -5rem;
+}
+.item7 {
+  margin-top: -8rem;
+  margin-left: 9rem;
+}
+.item8 {
+  margin-top: -10rem;
+  margin-left: 13rem;
+}
+
+.item10 {
+  margin-top: -15rem;
+}
+.item11 {
+  margin-top: -15rem;
+}
+.item12 {
+  margin-top: -3rem;
+}
+.item13 {
+  margin-top: -2rem;
+  margin-left: 12rem;
 }
