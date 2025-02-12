@@ -34,7 +34,7 @@ body {
 
 .card {
   position: relative;
-  background-image: url("images/paperboard-texture.jpg");
+  background-image: url("images/paperboard-texture.avif");
   min-width: 90rem;
   min-height: 73rem;
   max-height: 73rem;
@@ -184,14 +184,14 @@ body {
 
 .flipped-card__front {
   padding: 0.5rem;
-  background-image: url("images/paperboard-texture.jpg");
+  background-image: url("images/paperboard-texture.avif");
   --webkit-box-shadow: var(--shadow);
   --moz-box-shadow: var(--shadow);
   box-shadow: var(--shadow);
 }
 .flipped-card__back {
   padding: 0.5rem;
-  background-image: url("images/paperboard-texture.jpg");
+  background-image: url("images/paperboard-texture.avif");
   transform: rotateY(180deg);
   --webkit-box-shadow: var(--shadow);
   --moz-box-shadow: var(--shadow);
@@ -247,7 +247,7 @@ body {
 
 .dog-eared-button {
   padding: 1rem 1rem;
-  background-image: url("images/paperboard-texture.jpg");
+  background-image: url("images/paperboard-texture.avif");
   border: none;
   cursor: pointer;
   overflow: hidden;
@@ -329,7 +329,6 @@ body {
   height: 100%;
   width: 100%;
   transform: rotate(0.02turn);
-  
 }
 
 .contact-container {
